@@ -12,8 +12,8 @@ A Python tool to export pull request comments from Azure DevOps repositories. Th
 ## Prerequisites
 
 - Python 3.6 or higher
-- Azure DevOps access token
-- Azure DevOps organization and project details
+- GitHub access token with repo permissions
+- GitHub repository details
 
 ## Installation
 
@@ -41,13 +41,20 @@ cp .env.example .env
 
 ## Configuration
 
-Edit the `.env` file with your Azure DevOps details:
+Edit the `.env` file with your GitHub details:
 
 ```env
-AZURE_DEVOPS_PAT=your_personal_access_token
-AZURE_DEVOPS_ORG=your_organization
-AZURE_DEVOPS_PROJECT=your_project
+GITHUB_TOKEN=your_github_personal_access_token
+GITHUB_REPO_OWNER=owner_username
+GITHUB_REPO_NAME=repository_name
+GITHUB_PR_NUMBER=pull_request_number
 ```
+
+These environment variables are required:
+- `GITHUB_TOKEN`: Your GitHub Personal Access Token with repo access
+- `GITHUB_REPO_OWNER`: The owner/organization of the repository
+- `GITHUB_REPO_NAME`: The name of the repository
+- `GITHUB_PR_NUMBER`: The number of the pull request to export comments from
 
 ## Usage
 
