@@ -1,10 +1,10 @@
 # PR-CommentExport
 
-A Python tool to export pull request comments from Azure DevOps repositories. This tool helps developers and teams to easily extract and save PR comments for documentation, analysis, or archival purposes.
+A Python tool to export pull request comments from github repositories. This tool helps developers and teams to easily extract and save PR comments for documentation, analysis, or archival purposes.
 
 ## Features
 
-- Export pull request comments from Azure DevOps repositories
+- Export pull request comments from github repositories
 - Save comments to text files with proper formatting
 - Configurable through environment variables
 - Easy to set up and use
